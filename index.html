@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/66b42e253e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark fa-xl" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars fa-xl" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web/Java/Game Developer</p>
+            <h1>Hi, I'm <span>Gaurav</span> Soni.</h1>
+        </div>
+    </div>
+</div>
+<!-- ------------------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/profile5.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am currently pursuing B.Tech from Arya College Of Engineering and IT 
+                   affiliated to Rajasthan Technical University</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Internship')">Internship</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Certification')">Certification</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Web Development</span><br>HTML / CSS / JavaScript</li>
+                        <li><span>Java Development</span><br>Core Java / Advance Java</li>
+                        <li><span>Game Development</span><br>Unity 3D / Unreal Engine / C#</li>
+                        <li><span>Linux</span><br>System Administration</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Internship">
+                    <ul>
+                        <li><span>April, 2023 - May,2023</span><br>Java Development Intern at Code Clause.</li>
+                        <li><span>April, 2023 - May,2023</span><br>Java Development Intern at InternPe.</li>
+                        <li><span>December, 2022 - January, 2023</span><br>Advance Data Structures<br>Virtual Internship Experience at Walmart Global tech.</li>
+                        <li><span>December, 2022 - January, 2023</span><br>Python Client/Server Management<br>Virtual Internship Program at JPMorgan Chase & Co.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2020 - Current</span><br>Bachelor of Technology in Computer Science<br>Arya College of Engineering and IT affiliated to Rajasthan Technical University</li>
+                        <li><span>2019 - 2020</span><br>Senior Secondary<br>Rainbow School affiliated to CBSE</li>
+                        <li><span>2017 - 2018</span><br>Secondary<br>Vadanta International School affiliated to CBSE</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Certification">
+                    <ul>
+                        <li><span>2023</span><br>Red Hat Certified System Administrator (RHCSA)<br>CID:127-087-181</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------------Services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-java fa-xl"></i>
+                <h2>Java Development</h2>
+                <p>designing, implementing, and maintaining Java-based software and applications,
+                   contributing to all stages of the software development lifecycle.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code fa-xl"></i>
+                <h2>Web Development</h2>
+                <p>creating webpage layouts, writing code, editing website content,
+                   and making adjustments based on client feedback.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad fa-xl"></i>
+                <h2>Game Development</h2>
+                <p>Brainstorm game concepts and design elements by coordinating with the design team.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-redhat fa-xl"></i>
+                <h2>Red Hat System Administration</h2>
+                <p>Install, configure, and maintain Linux-based servers, 
+                   including web servers, application servers, and database servers.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------contact --------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane fa-sm"></i>9213163085n.k@gmail.com</p>
+                <p><i class="fa-solid fa-phone fa-sm"></i>+91 9636564470</p>
+                <div class="social-icons">
+                    <a href="https://github.com/gauravsoniiii"><i class="fa-brands fa-github fa-sm"></i></a>
+                    <a href="https://www.linkedin.com/in/gaurav-soni-14a23a233/"><i class="fa-brands fa-linkedin fa-sm"></i></a>
+                </div>
+                <form action="https://drive.google.com/file/d/1b8DIV5TQYtY2Rki2eqGDe-j5Kjnvbkl8/view?usp=share_link">
+                    <!-- <a href="/Gaurav_Soni_CV.pdf" download  class="button"><button>Download CV</button></a> -->
+                    <input type="submit" class="button" value="Download CV" />
+                </form>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="E-Mail" placeholder="Your E-Mail" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button">Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-300px";
+    }
+    
+</script>
+</body>
+</html>
